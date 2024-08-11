@@ -1,0 +1,73 @@
+# macOS
+.DS_Store
+
+# Node.js
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Log files
+*.log
+
+# Operating System files
+Thumbs.db
+Desktop.ini
+
+# Java
+*.class
+
+# IDEs and editors
+*.swp
+*.swo
+
+# Backup files
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Package files
+*.tgz
+*.gz
+*.zip
+*.tar
+*.rar
+
+# Environment files
+.env
+
+# Build outputs
+dist/
+build/
+
+# Miscellaneous
+*.sqlite
+*.db
+*.pid
+*.seed
+*.sublime-workspace
+*.sublime-project
+
+# Ignore all .DS_Store files at any depth
+**/.DS_Store
+
+# Ignore all .vscode folders at any depth
+**/.vscode/
+
+# Ignore all .log files at any depth
+**/*.log
+
+# Ignore all .env files at any depth
+**/.env
+
+# Ignore all node_modules folders at any depth
+**/node_modules/
+
+# Ignore all build and dist directories at any depth
+**/dist/
+**/build/
