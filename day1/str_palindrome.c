@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
     {
         printf("Not palindrome\n");
     }
-    
+
     return 0;
 }
 
@@ -30,10 +30,10 @@ int strlength(char *s)
 
 int ispalindrome(char *s)
 {
-    int bool_flag = 1;  // assume true
+    int bool_flag = 1; // assume true
     int len = strlength(s);
 
-    for (int i = 0,  j = len - 1; i < j; i++, j--)
+    for (int i = 0, j = len - 1; i < j; i++, j--)
     {
         if (s[i] == s[j])
         {
@@ -46,7 +46,6 @@ int ispalindrome(char *s)
             bool_flag = 0;
             break;
         }
-        
     }
     return bool_flag;
 }
