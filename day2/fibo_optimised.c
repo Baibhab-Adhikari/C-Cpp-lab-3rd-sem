@@ -19,7 +19,7 @@ void fibonacci(int a, int b, int n)
     if (n > 0)
     {
         c = a + b;
-        printf("%d", a);
+        printf("%d ", a);
         fibonacci(b, c, n - 1);
     }
 }
