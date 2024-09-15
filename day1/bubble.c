@@ -1,22 +1,22 @@
 #include <stdio.h>
 
-#define SIZE 100 // Maximum size of the array, can be adjusted as needed
+#define SIZE 100 // Maximum size of the array
 
 void bubbleSort(int arr[], int n)
 {
-    int swapped; // Use int as a flag instead of bool
+    int swapped; 
     for (int i = 0; i < n - 1; i++)
     {
-        swapped = 0; // Reset the swapped flag for each pass
+        swapped = 0; 
         for (int j = 0; j < n - i - 1; j++)
         {
             if (arr[j] > arr[j + 1])
             {
-                // Swap the elements
+                
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
-                swapped = 1; // Set flag to indicate a swap occurred
+                swapped = 1; 
             }
         }
         // If no elements were swapped, the array is already sorted
@@ -41,18 +41,18 @@ int main()
     int arr[SIZE];
     int n;
 
-    // Get the number of elements from the user
+    
     printf("Enter the number of elements in the array (max %d): ", SIZE);
     scanf("%d", &n);
 
-    // Check if the input is within the allowed range
+    
     if (n <= 0 || n > SIZE)
     {
         printf("Invalid number of elements.\n");
         return 1;
     }
 
-    // Get array elements from the user
+    
     printf("Enter %d elements:\n", n);
     for (int i = 0; i < n; i++)
     {

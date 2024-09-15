@@ -1,12 +1,12 @@
 // palindrome check of string without string.h
 #include <stdio.h>
 // function prototypes
-int strlength(char *s);
-int ispalindrome(char *s);
+int strLength(char *s);
+int isPalindrome(char *s);
 int main(int argc, char const *argv[])
 {
     char *str = "MADAM";
-    if (ispalindrome(str) == 1)
+    if (isPalindrome(str) == 1)
     {
         printf("Palindrome\n");
     }
@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
-int strlength(char *s)
+int strLength(char *s)
 {
     int len = 0;
     for (int i = 0; i < s[i] != 0; i++)
@@ -28,10 +28,10 @@ int strlength(char *s)
     return len;
 }
 
-int ispalindrome(char *s)
+int isPalindrome(char *s)
 {
     int bool_flag = 1; // assume true
-    int len = strlength(s);
+    int len = strLength(s);
 
     for (int i = 0, j = len - 1; i < j; i++, j--)
     {
@@ -42,7 +42,6 @@ int ispalindrome(char *s)
         }
         else
         {
-            // printf("String not palindrome.\n");
             bool_flag = 0;
             break;
         }
